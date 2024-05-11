@@ -1,5 +1,7 @@
 #include<stdio.h>
 int main(){
-    printf("welcome");
+           int n;   
+    scanf("%d",&n);
+    printf("welcome %d",n);
     return 0;
 }

@@ -1,5 +1,6 @@
 #include<stdio.h>
 int main(){
+
     printf("welcome to error");
     return 0;
 }

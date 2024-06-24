@@ -39,6 +39,7 @@ void insert_at_head(Node *&head, int v)
     cout << "inserted at head " << endl
          << endl;
 }
+// insert position
 void inserted_at_position(Node *head, int pos, int value)
 {
     Node *newNode = new Node(value);
@@ -46,7 +47,7 @@ void inserted_at_position(Node *head, int pos, int value)
     for (int i = 1; i <= pos - 1; i++)
     {
         tmp = tmp->next;
-        if(tmp == NULL)
+        if (tmp == NULL)
         {
             cout << endl
                  << "position is not available" << endl
@@ -65,6 +66,21 @@ void delete_from_node(Node *head, int pos)
     for (int i = 1; i <= pos - 1; i++)
     {
         tmp = tmp->next;
+        if (tmp == NULL)
+        {
+            cout << endl
+                 << "Invalid Index" << endl
+                 << endl;
+            return;
+        }
+    }
+
+    if (tmp->next == NULL)
+    {
+        cout << endl
+             << "Invalid Index" << endl
+             << endl;
+        return;
     }
     Node *deleteNode = tmp->next;
     tmp->next = tmp->next->next;

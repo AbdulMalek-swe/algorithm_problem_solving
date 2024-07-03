@@ -30,6 +30,7 @@ void insert_at_tail(Node *&head, int value)
     cout<<"tail inserted successfully"<<endl<<endl;
     
 }
+// insert any position 
 void inserted_at_position(Node *head,int pos,int value){
      Node* newNode = new Node(value);
      Node *tmp = head;
@@ -38,6 +39,7 @@ void inserted_at_position(Node *head,int pos,int value){
      }
       newNode->next=tmp->next;
           tmp->next = newNode;
+           
      cout<<"successfully inserted position "<<pos<<endl;
 }
 void print_linked_list(Node *head)

@@ -2,9 +2,8 @@
 using namespace std;
 
 int main() {
-    stack<int>st;
-    st.push(12);
-    cout<<st.top();
-    
+     stack<string>s,s1;
+     string st,st1;
+     
     return 0;
 }
